@@ -1,0 +1,283 @@
+/* Start Racine Rules */
+
+:root {
+    --black-color: #131316;
+    --blue-color: #00c7fc;
+    --white-color: #f4f4f4;
+    --paragraph-color: #637988;
+}
+
+/* End Racine Rules */
+/* Start Bases Rules */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+/* End Bases Rules */
+
+/* Start Componants */
+.main-title {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.main-title h2 {
+    text-transform: uppercase;
+}
+
+.main-title::before {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background-color: var(--blue-color);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.main-title::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--blue-color);
+    transform: rotate(45deg) translateX(-50%);
+    bottom: -56px;
+    left: 50%;
+    background-color: var(--white-color);
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    -moz-transform: rotate(45deg) translateX(-50%);
+    -ms-transform: rotate(45deg) translateX(-50%);
+    -o-transform: rotate(45deg) translateX(-50%);
+}
+
+
+/* End Componants */
+
+/* Star Navbar */
+.navbar .logo {
+    width: 50%;
+    height: auto;
+}
+
+.navbar .navbar-toggler {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+.navbar .nav-item .active,
+.navbar .nav-item:hover a {
+    color: var(--blue-color);
+}
+
+/* End Navbar */
+
+/* Start Landing */
+
+.landing {
+    background-color: var(--black-color);
+    height: calc(100vh - 86px);
+}
+
+.landing .prev a {
+    width: 150px;
+    font-weight: 500;
+}
+
+.landing .prev a:first-of-type {
+    background-color: var(--black-color);
+    border: 2px solid #FFF;
+}
+
+.landing .prev a:last-of-type {
+    background-color: var(--blue-color);
+    border: 2px solid var(--blue-color);
+}
+
+.landing .prev a:last-of-type:hover {
+    background-color: #0289ad;
+    border-color: #0289ad;
+}
+
+.landing svg {
+    color: var(--blue-color);
+}
+
+/* End Landing */
+
+/* Start History */
+
+.history {
+    background-color: var(--white-color);
+}
+
+.history p {
+    width: 60%;
+    margin: 15px auto 10px;
+    line-height: 1.6;
+    color: var(--paragraph-color);
+}
+
+/* End History */
+
+/* Start Services */
+
+.services {
+    background-color: var(--black-color);
+}
+
+.services .main-title::after {
+    background-color: var(--black-color);
+}
+
+.services .main-title h2 {
+    color: #FFF;
+}
+
+.services .service {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.services .service .icon::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: var(--blue-color);
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.services .service p {
+    color: var(--paragraph-color);
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* End Services */
+
+/* Start Clients */
+.clients .main-title::after {
+    background-color: #FFF;
+}
+
+.clients blockquote {
+    width: 60%;
+    margin: 15px auto 10px;
+    line-height: 1.6;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.clients span {
+    font-weight: 500;
+}
+
+.clients .image {
+    width: 100px;
+    margin: 0 auto 10px;
+}
+
+/* End Clients */
+
+/* Start Contact */
+
+.contact {
+    background-color: var(--black-color);
+}
+
+.contact .title::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: var(--blue-color);
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.contact .box {
+    min-height: 580px;
+}
+
+.contact form input[name="email"],
+.contact form textarea {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: var(--black-color);
+    border: none;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+}
+
+.contact form input[name="email"]:focus,
+.contact form textarea:focus {
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+}
+
+.contact form input[name="email"]::placeholder,
+.contact form textarea::placeholder {
+    color: #FFF;
+}
+
+.contact form textarea {
+    height: 150px;
+    margin-top: 50px;
+}
+
+.contact form a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+
+/* End Contact */
+
+/* Start Footer */
+footer {
+    background-color: var(--blue-color);
+    color: #FFF;
+    font-weight: 500;
+}
+
+footer svg {
+    margin-right: 25px;
+}
+
+/* End Footer */
